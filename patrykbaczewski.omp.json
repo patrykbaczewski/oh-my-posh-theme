@@ -61,14 +61,14 @@
             "type": "path"
           },
           {
-            "background": "#F1502F",
-            "background_templates": [
+            "background": "transparent",
+            "foreground_templates": [
               "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
               "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
               "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
               "{{ if gt .Behind 0 }}#B388FF{{ end }}"
             ],
-            "foreground": "#011627",
+            "foreground": "#D6DEEB",
             "powerline_symbol": "\ue0b0",
             "properties": {
               "branch_icon": "\uf418 ",
